@@ -23,6 +23,6 @@ cholesterol_encoded = 1 if cholesterol == 'HIGH' else 0
 input_data = np.array([[age, gender_encoded, bp_encoded, cholesterol_encoded, na_to_k]])
 
 # Make predictions when the button is clicked
-if st.button('Predict Drug'):
+if st.button('Predict Drug for Patient'):
     prediction = model.predict(input_data)
     st.write(f'Predicted Drug: {prediction}')
